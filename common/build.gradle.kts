@@ -15,7 +15,9 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                api(compose.preview)
                 implementation(projects.repository)
+                implementation(libs.kotlinx.datetime)
             }
         }
         val commonTest by getting {
@@ -28,7 +30,6 @@ kotlin {
             dependencies {
                 api(libs.androidx.appcompat)
                 api(libs.androidx.coreKtx)
-                implementation(libs.threetenabp)
             }
         }
         val androidTest by getting {
@@ -42,6 +43,16 @@ kotlin {
                 api(compose.desktop.common)
             }
         }
+        val composeMain by creating {
+            dependsOn(commonMain)
+            androidMain.dependsOn(this)
+            desktopMain.dependsOn(this)
+        }
+//        val iosMain by creating {
+//            dependsOn(commonMain)
+//            iosX64Main.dependsOn(this)
+//            iosArm64Main.dependsOn(this)
+//        }
     }
 }
 

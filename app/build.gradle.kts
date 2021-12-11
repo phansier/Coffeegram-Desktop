@@ -41,9 +41,6 @@ dependencies {
 
     implementation(libs.androidx.activity.compose)
 
-
-    implementation(libs.threetenabp)
-
     implementation(libs.coroutines.core)
     implementation(libs.coroutines.android)
 
