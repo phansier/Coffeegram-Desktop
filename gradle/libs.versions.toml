@@ -3,7 +3,7 @@ kotlin = "1.5.31"
 agp = "7.0.0"
 jetbrainsCompose = "1.0.0"
 sqldelight = "1.5.3"
-coroutines = "1.5.2"
+coroutines = "1.5.2-native-mt"
 
 coreKtx = "1.7.0"
 appcompat = "1.4.0"

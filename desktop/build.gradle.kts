@@ -14,7 +14,7 @@ kotlin {
         named("jvmMain") {
             dependencies {
                 implementation(compose.desktop.currentOs)
-                implementation(projects.common)
+                implementation(projects.compose)
             }
         }
     }

@@ -1,7 +1,7 @@
 package ru.beryukhov.coffeegram.data
 
 import androidx.annotation.DrawableRes
-import ru.beryukhov.compose_common.R
+import ru.beryukhov.common.R
 
 actual abstract class CoffeeType constructor(
     actual val name: String,

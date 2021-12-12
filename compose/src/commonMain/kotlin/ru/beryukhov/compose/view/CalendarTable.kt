@@ -31,7 +31,7 @@ import ru.beryukhov.coffeegram.model.NavigationStore
 import ru.beryukhov.coffeegram.model.YearMonth
 import ru.beryukhov.coffeegram.model.dateFormatSymbolsShortWeekdays
 import ru.beryukhov.coffeegram.model.getShortDisplayName
-import ru.beryukhov.coffeegram.times
+import ru.beryukhov.compose.times
 
 
 data class DayItem(

@@ -1,4 +1,4 @@
-package ru.beryukhov.coffeegram
+package ru.beryukhov.compose
 
 
 internal operator fun <E> List<E>.times(i: Int): List<E> {

@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     kotlin("multiplatform")
+    id("org.jetbrains.compose")
 }
 
 fun composeDependency(groupWithArtifact: String) = "$groupWithArtifact:${libs.versions.jetbrainsCompose}"
@@ -11,9 +12,12 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(projects.repository)
+                api(projects.common)
                 implementation(libs.kotlinx.datetime)
-                implementation(libs.coroutines.core)
+                api(compose.runtime)
+                api(compose.foundation)
+                api(compose.material)
+                api(compose.preview)
             }
         }
         val commonTest by getting {
@@ -36,13 +40,10 @@ kotlin {
         }
         val desktopMain by getting {
             dependencies {
+                api(compose.desktop.common)
             }
         }
-//        val iosMain by creating {
-//            dependsOn(commonMain)
-//            iosX64Main.dependsOn(this)
-//            iosArm64Main.dependsOn(this)
-//        }
+
     }
 }
 

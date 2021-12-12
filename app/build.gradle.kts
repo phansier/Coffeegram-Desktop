@@ -30,7 +30,7 @@ android {
 
 dependencies {
 
-    implementation(projects.common)
+    implementation(projects.compose)
 
     implementation(libs.androidx.coreKtx)
     implementation(libs.androidx.appcompat)
