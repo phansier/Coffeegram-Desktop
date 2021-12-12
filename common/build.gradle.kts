@@ -47,6 +47,21 @@ kotlin {
             dependsOn(commonMain)
             androidMain.dependsOn(this)
             desktopMain.dependsOn(this)
+            dependencies {
+                implementation(libs.kotlinx.datetime)
+                api(compose.runtime)
+                api(compose.foundation)
+                api(compose.material)
+                api(compose.preview)
+            }
+        }
+        val composeTest by creating {
+            dependsOn(commonTest)
+            androidTest.dependsOn(this)
+            dependencies {
+                implementation(kotlin("test-common"))
+                implementation(kotlin("test-annotations-common"))
+            }
         }
 //        val iosMain by creating {
 //            dependsOn(commonMain)

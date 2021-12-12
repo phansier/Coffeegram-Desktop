@@ -1,4 +1,4 @@
-package ru.beryukhov.coffeegram.view
+package ru.beryukhov.compose.view
 
 //import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.foundation.layout.PaddingValues

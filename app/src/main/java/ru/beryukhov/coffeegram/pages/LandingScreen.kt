@@ -9,7 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import ru.beryukhov.coffeegram.R
-import ru.beryukhov.coffeegram.app_ui.brown500
+import ru.beryukhov.compose.app_ui.brown500
 
 private const val SplashWaitTime: Long = 2000
 

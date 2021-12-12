@@ -1,4 +1,4 @@
-package ru.beryukhov.coffeegram.view
+package ru.beryukhov.compose.view
 
 //import androidx.compose.ui.tooling.preview.Preview
 
@@ -23,7 +23,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import kotlinx.datetime.DayOfWeek
 import kotlinx.datetime.Month
-import ru.beryukhov.coffeegram.app_ui.CoffeegramTheme
+import ru.beryukhov.compose.app_ui.CoffeegramTheme
 import ru.beryukhov.coffeegram.data.Cappuccino
 import ru.beryukhov.coffeegram.data.CoffeeType
 import ru.beryukhov.coffeegram.model.NavigationIntent

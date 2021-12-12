@@ -1,4 +1,4 @@
-package ru.beryukhov.coffeegram.pages
+package ru.beryukhov.compose.pages
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -30,7 +30,7 @@ import ru.beryukhov.coffeegram.model.DaysCoffeesStore
 import ru.beryukhov.coffeegram.model.NavigationIntent
 import ru.beryukhov.coffeegram.model.NavigationStore
 import ru.beryukhov.coffeegram.model.YearMonth
-import ru.beryukhov.coffeegram.view.MonthTable
+import ru.beryukhov.compose.view.MonthTable
 
 
 @Composable

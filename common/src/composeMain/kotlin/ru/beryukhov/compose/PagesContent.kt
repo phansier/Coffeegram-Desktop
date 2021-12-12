@@ -1,4 +1,4 @@
-package ru.beryukhov.coffeegram
+package ru.beryukhov.compose
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -11,14 +11,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import ru.beryukhov.coffeegram.app_ui.CoffeegramTheme
+import ru.beryukhov.compose.app_ui.CoffeegramTheme
 import ru.beryukhov.coffeegram.model.DaysCoffeesStore
 import ru.beryukhov.coffeegram.model.NavigationState
 import ru.beryukhov.coffeegram.model.NavigationStore
-import ru.beryukhov.coffeegram.pages.CoffeeListAppBar
-import ru.beryukhov.coffeegram.pages.CoffeeListPage
-import ru.beryukhov.coffeegram.pages.TableAppBar
-import ru.beryukhov.coffeegram.pages.TablePage
+import ru.beryukhov.compose.pages.CoffeeListAppBar
+import ru.beryukhov.compose.pages.CoffeeListPage
+import ru.beryukhov.compose.pages.TableAppBar
+import ru.beryukhov.compose.pages.TablePage
 
 //@OptIn(ExperimentalCoroutinesApi::class)
 @Composable

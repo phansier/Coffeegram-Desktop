@@ -1,4 +1,4 @@
-package ru.beryukhov.coffeegram.pages
+package ru.beryukhov.compose.pages
 
 //import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -27,7 +27,7 @@ import ru.beryukhov.coffeegram.model.NavigationIntent
 import ru.beryukhov.coffeegram.model.NavigationState
 import ru.beryukhov.coffeegram.model.NavigationStore
 import ru.beryukhov.coffeegram.model.nowLD
-import ru.beryukhov.coffeegram.view.CoffeeTypeItem
+import ru.beryukhov.compose.view.CoffeeTypeItem
 
 
 @Composable
@@ -68,10 +68,10 @@ fun CoffeeList(
     }
 }
 
-data class MutablePair(val ct:CoffeeType, var count:Int)
+data class MutablePair(val ct: CoffeeType, var count:Int)
 
 //@VisibleForTesting
-internal fun Map<CoffeeType, Int>.withEmpty(): List<Pair<CoffeeType, Int>> {
+fun Map<CoffeeType, Int>.withEmpty(): List<Pair<CoffeeType, Int>> {
     val emptyList: MutableList<MutablePair> =
         coffeeTypeValues().toList().map { MutablePair(it, 0) }.toMutableList()
     this.forEach { entry: Map.Entry<CoffeeType, Int> ->

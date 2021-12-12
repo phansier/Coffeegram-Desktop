@@ -58,7 +58,7 @@ data class YearMonth(val year: Int, val month: Month) {
             NOVEMBER -> "NOVEMBER"
             DECEMBER -> "DECEMBER"
             else -> ""
-        }.toLowerCase().capitalize()
+        }.lowercase().capitalize()
 
 
     fun atDay(day: Int): LocalDate {

@@ -8,7 +8,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import ru.beryukhov.coffeegram.DefaultPreview
+import ru.beryukhov.compose.DefaultPreview
 
 fun main() = application {
     Window(

@@ -11,6 +11,7 @@ import ru.beryukhov.coffeegram.animations.newSplashTransition
 import ru.beryukhov.coffeegram.model.DaysCoffeesStore
 import ru.beryukhov.coffeegram.model.NavigationStore
 import ru.beryukhov.coffeegram.pages.LandingPage
+import ru.beryukhov.compose.PagesContent
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

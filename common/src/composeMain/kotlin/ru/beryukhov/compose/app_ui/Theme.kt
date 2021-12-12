@@ -1,4 +1,4 @@
-package ru.beryukhov.coffeegram.app_ui
+package ru.beryukhov.compose.app_ui
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.MaterialTheme.shapes
